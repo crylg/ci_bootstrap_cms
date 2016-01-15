@@ -1,0 +1,2 @@
+XXXXXXXXX
+<?php echo $title;?>

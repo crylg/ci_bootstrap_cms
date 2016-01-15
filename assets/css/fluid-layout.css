@@ -1,0 +1,9 @@
+ #cv {
+   width: 600px; height: 400px;
+   background: #000;
+   border-radius: 20px;
+   padding: 20px;
+   margin: 20px auto;
+   box-shadow: 0 0 40px #222;
+   behavior: url(/assets/js/PIE.htc);
+ }
