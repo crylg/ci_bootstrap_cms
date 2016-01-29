@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : 192.168.1.2
-Source Server Version : 50703
-Source Host           : 192.168.1.2:3306
+Source Server         : localhost
+Source Server Version : 50520
+Source Host           : localhost:3306
 Source Database       : ddz_gdf
 
 Target Server Type    : MYSQL
-Target Server Version : 50703
+Target Server Version : 50520
 File Encoding         : 65001
 
-Date: 2016-01-15 11:40:32
+Date: 2016-01-29 11:01:32
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -32,14 +32,14 @@ CREATE TABLE `exchange_award` (
 -- ----------------------------
 -- Records of exchange_award
 -- ----------------------------
-INSERT INTO `exchange_award` VALUES ('1', '2', '50元话费 ', '503', '5000', '50');
-INSERT INTO `exchange_award` VALUES ('2', '2', '100元话费 ', '504', '10000', '100');
+INSERT INTO `exchange_award` VALUES ('1', '2', '20元话费', '502', '2000', '20');
+INSERT INTO `exchange_award` VALUES ('2', '2', '50元话费', '503', '5000', '50');
 INSERT INTO `exchange_award` VALUES ('3', '1', '京东E卡100元', '601', '11000', '110');
 INSERT INTO `exchange_award` VALUES ('4', '1', '京东E卡200元', '602', '22000', '220');
-INSERT INTO `exchange_award` VALUES ('5', '1', 'iPhone 6s', '701', '550000', '5500');
+INSERT INTO `exchange_award` VALUES ('5', '1', 'iPhone 6s', '701', '580000', '5800');
 INSERT INTO `exchange_award` VALUES ('6', '1', 'iPad Air2', '702', '380000', '3800');
-INSERT INTO `exchange_award` VALUES ('7', '1', '小米电视2 40寸', '703', '210000', '2100');
-INSERT INTO `exchange_award` VALUES ('8', '1', '小米平板', '704', '110000', '1100');
+INSERT INTO `exchange_award` VALUES ('7', '1', '小米电视2 40寸', '703', '220000', '2200');
+INSERT INTO `exchange_award` VALUES ('8', '1', '小米平板', '704', '120000', '1200');
 
 -- ----------------------------
 -- Table structure for fruit_slots_config
@@ -64,7 +64,7 @@ CREATE TABLE `fruit_slots_config` (
 -- ----------------------------
 -- Records of fruit_slots_config
 -- ----------------------------
-INSERT INTO `fruit_slots_config` VALUES ('15', '10000', '10', '20', '20', '20', '20', '20', '600', '3', '30', '10000', '180');
+INSERT INTO `fruit_slots_config` VALUES ('30', '10000', '10', '10', '10', '10', '15', '15', '600', '3', '10', '10000', '180');
 
 -- ----------------------------
 -- Table structure for fruit_slots_fruit_base
@@ -90,28 +90,28 @@ CREATE TABLE `fruit_slots_fruit_base` (
 -- ----------------------------
 -- Records of fruit_slots_fruit_base
 -- ----------------------------
-INSERT INTO `fruit_slots_fruit_base` VALUES ('1', 'GOODLUCK', '255', '0', '500000', '100000', '3', '0', '1000', '5000', '5000', '8000', '1000');
-INSERT INTO `fruit_slots_fruit_base` VALUES ('2', 'Apple_2', '7', '2', '8000', '1000', '0', '7000', '0', '0', '0', '3000', '0');
-INSERT INTO `fruit_slots_fruit_base` VALUES ('3', 'Orange_4', '6', '4', '4000', '3000', '0', '10000', '0', '0', '0', '0', '0');
-INSERT INTO `fruit_slots_fruit_base` VALUES ('4', 'Mango_6', '5', '6', '3000', '4000', '0', '10000', '0', '0', '0', '0', '0');
-INSERT INTO `fruit_slots_fruit_base` VALUES ('5', 'Watermelon_8', '3', '8', '2000', '8000', '0', '10000', '0', '0', '0', '0', '0');
-INSERT INTO `fruit_slots_fruit_base` VALUES ('6', 'Bell_2', '4', '2', '8000', '1000', '0', '7000', '0', '0', '0', '3000', '0');
-INSERT INTO `fruit_slots_fruit_base` VALUES ('7', '77_12', '1', '12', '1000', '8000', '3', '10000', '0', '0', '0', '0', '0');
-INSERT INTO `fruit_slots_fruit_base` VALUES ('8', 'Orange_2', '6', '2', '8000', '2000', '0', '7000', '0', '0', '0', '3000', '0');
-INSERT INTO `fruit_slots_fruit_base` VALUES ('9', 'Apple_4', '7', '4', '4000', '3000', '0', '10000', '0', '0', '0', '0', '0');
-INSERT INTO `fruit_slots_fruit_base` VALUES ('10', 'Mango_6', '5', '6', '3000', '4000', '0', '8000', '0', '2000', '0', '0', '0');
-INSERT INTO `fruit_slots_fruit_base` VALUES ('11', 'Star_8', '2', '8', '2000', '8000', '0', '10000', '0', '0', '0', '0', '0');
-INSERT INTO `fruit_slots_fruit_base` VALUES ('12', 'BAR_30', '0', '30', '100000', '500000', '30', '10000', '0', '0', '0', '0', '0');
-INSERT INTO `fruit_slots_fruit_base` VALUES ('13', 'Mango_2', '5', '2', '8000', '2000', '0', '7000', '0', '0', '0', '3000', '0');
-INSERT INTO `fruit_slots_fruit_base` VALUES ('14', 'Apple_4', '7', '4', '4000', '3000', '0', '8000', '0', '2000', '0', '0', '0');
-INSERT INTO `fruit_slots_fruit_base` VALUES ('15', 'Bell_6', '4', '6', '3000', '4000', '0', '10000', '0', '0', '0', '0', '0');
-INSERT INTO `fruit_slots_fruit_base` VALUES ('16', 'Star_8', '2', '8', '2000', '8000', '0', '10000', '0', '0', '0', '0', '0');
-INSERT INTO `fruit_slots_fruit_base` VALUES ('17', 'Watermelon_2', '3', '2', '8000', '2000', '0', '7000', '0', '0', '0', '3000', '0');
-INSERT INTO `fruit_slots_fruit_base` VALUES ('18', '77_12', '1', '12', '1000', '8000', '3', '10000', '0', '0', '0', '0', '0');
-INSERT INTO `fruit_slots_fruit_base` VALUES ('19', 'Star_2', '2', '2', '8000', '2000', '0', '7000', '0', '0', '0', '3000', '0');
-INSERT INTO `fruit_slots_fruit_base` VALUES ('20', 'Orange_4', '6', '4', '4000', '3000', '0', '8000', '0', '2000', '0', '0', '0');
-INSERT INTO `fruit_slots_fruit_base` VALUES ('21', 'Bell_6', '4', '6', '3000', '4000', '0', '10000', '0', '0', '0', '0', '0');
-INSERT INTO `fruit_slots_fruit_base` VALUES ('22', 'Watermelon_8', '3', '8', '2000', '8000', '0', '10000', '0', '0', '0', '0', '0');
+INSERT INTO `fruit_slots_fruit_base` VALUES ('1', 'GOODLUCK', '255', '0', '50000', '50000', '3', '0', '100', '9000', '9000', '9000', '3000');
+INSERT INTO `fruit_slots_fruit_base` VALUES ('2', 'Apple_2', '7', '2', '8000', '3000', '0', '8000', '0', '0', '0', '2000', '0');
+INSERT INTO `fruit_slots_fruit_base` VALUES ('3', 'Orange_4', '6', '4', '200', '3000', '0', '10000', '0', '0', '0', '0', '0');
+INSERT INTO `fruit_slots_fruit_base` VALUES ('4', 'Mango_6', '5', '6', '200', '2000', '0', '10000', '0', '0', '0', '0', '0');
+INSERT INTO `fruit_slots_fruit_base` VALUES ('5', 'Watermelon_8', '3', '8', '100', '2000', '0', '8000', '0', '0', '2000', '0', '0');
+INSERT INTO `fruit_slots_fruit_base` VALUES ('6', 'Bell_2', '4', '2', '8000', '3000', '0', '8000', '0', '0', '0', '2000', '0');
+INSERT INTO `fruit_slots_fruit_base` VALUES ('7', '77_12', '1', '12', '100', '2000', '3', '10000', '0', '0', '0', '0', '0');
+INSERT INTO `fruit_slots_fruit_base` VALUES ('8', 'Orange_2', '6', '2', '8000', '3000', '0', '8000', '0', '0', '0', '2000', '0');
+INSERT INTO `fruit_slots_fruit_base` VALUES ('9', 'Apple_4', '7', '4', '200', '3000', '0', '10000', '0', '0', '0', '0', '0');
+INSERT INTO `fruit_slots_fruit_base` VALUES ('10', 'Mango_6', '5', '6', '200', '2000', '0', '8000', '0', '2000', '0', '0', '0');
+INSERT INTO `fruit_slots_fruit_base` VALUES ('11', 'Star_8', '2', '8', '100', '2000', '0', '8000', '0', '0', '2000', '0', '0');
+INSERT INTO `fruit_slots_fruit_base` VALUES ('12', 'BAR_30', '0', '30', '10000', '10000', '18', '10000', '0', '0', '0', '0', '0');
+INSERT INTO `fruit_slots_fruit_base` VALUES ('13', 'Mango_2', '5', '2', '8000', '3000', '0', '8000', '0', '0', '0', '2000', '0');
+INSERT INTO `fruit_slots_fruit_base` VALUES ('14', 'Apple_4', '7', '4', '200', '3000', '0', '8000', '0', '2000', '0', '0', '0');
+INSERT INTO `fruit_slots_fruit_base` VALUES ('15', 'Bell_6', '4', '6', '100', '2000', '0', '10000', '0', '0', '0', '0', '0');
+INSERT INTO `fruit_slots_fruit_base` VALUES ('16', 'Star_8', '2', '8', '100', '2000', '0', '10000', '0', '0', '0', '0', '0');
+INSERT INTO `fruit_slots_fruit_base` VALUES ('17', 'Watermelon_2', '3', '2', '8000', '3000', '0', '8000', '0', '0', '0', '2000', '0');
+INSERT INTO `fruit_slots_fruit_base` VALUES ('18', '77_12', '1', '12', '100', '2000', '3', '8000', '0', '0', '2000', '0', '0');
+INSERT INTO `fruit_slots_fruit_base` VALUES ('19', 'Star_2', '2', '2', '8000', '3000', '0', '8000', '0', '0', '0', '2000', '0');
+INSERT INTO `fruit_slots_fruit_base` VALUES ('20', 'Orange_4', '6', '4', '200', '3000', '0', '8000', '0', '2000', '0', '0', '0');
+INSERT INTO `fruit_slots_fruit_base` VALUES ('21', 'Bell_6', '4', '6', '100', '2000', '0', '10000', '0', '0', '0', '0', '0');
+INSERT INTO `fruit_slots_fruit_base` VALUES ('22', 'Watermelon_8', '3', '8', '100', '2000', '0', '10000', '0', '0', '0', '0', '0');
 
 -- ----------------------------
 -- Table structure for fruit_solts_fruit_composite
@@ -132,6 +132,24 @@ INSERT INTO `fruit_solts_fruit_composite` VALUES ('2', '小三元', '10,14,20');
 INSERT INTO `fruit_solts_fruit_composite` VALUES ('3', '大三元', '5,11,18');
 INSERT INTO `fruit_solts_fruit_composite` VALUES ('4', '小满贯', '2,6,8,13,17,19');
 INSERT INTO `fruit_solts_fruit_composite` VALUES ('5', '大满贯', '4,7,9,11,15,20,22');
+
+-- ----------------------------
+-- Table structure for gift
+-- ----------------------------
+DROP TABLE IF EXISTS `gift`;
+CREATE TABLE `gift` (
+  `id` int(11) NOT NULL COMMENT '礼包ID',
+  `name` varchar(64) DEFAULT '',
+  `gold` int(11) DEFAULT '0' COMMENT '给予的金币数',
+  `diamond` int(11) DEFAULT '0' COMMENT '给予的街头币数',
+  `vip` int(11) DEFAULT '0' COMMENT 'VIP等级',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='礼包配置表';
+
+-- ----------------------------
+-- Records of gift
+-- ----------------------------
+INSERT INTO `gift` VALUES ('1', '新手礼包', '100000', '0', '1');
 
 -- ----------------------------
 -- Table structure for level_exp
@@ -260,7 +278,7 @@ CREATE TABLE `match` (
   `bet` int(10) unsigned DEFAULT '0' COMMENT '赌注基数',
   `bet_add` int(10) unsigned DEFAULT '0' COMMENT '赌注基数增加值',
   `bet1` int(10) unsigned DEFAULT '0' COMMENT '比赛场额外赌注基数',
-  `gold_limit` int(10) unsigned DEFAULT '0' COMMENT '入场金币限制',
+  `gold_max_limit` int(10) unsigned DEFAULT '0' COMMENT '入场金币最大限制',
   `gold_cost` int(10) unsigned DEFAULT '0' COMMENT '手续费用',
   `award` int(10) unsigned DEFAULT '0' COMMENT '排名奖励ID',
   `player_num` int(10) unsigned DEFAULT '0' COMMENT '比赛场开赛人数',
@@ -285,10 +303,10 @@ CREATE TABLE `match` (
 -- ----------------------------
 -- Records of match
 -- ----------------------------
-INSERT INTO `match` VALUES ('40101', '2', '1', '破产翻身赛（免费）', '0', '1000', '100', '100', '0', '0', '40101', '60', '1200', '33', '12', '10000', '1000', '0', '0', '0', '3', '300', '100', '0', '0', '0', '802');
+INSERT INTO `match` VALUES ('40101', '2', '1', '破产翻身赛（免费）', '0', '1000', '100', '100', '1000', '0', '40101', '90', '1200', '33', '12', '10000', '1000', '0', '0', '0', '3', '300', '100', '0', '0', '0', '802');
 INSERT INTO `match` VALUES ('40201', '2', '1', '5元话费赛（免费）', '0', '1000', '100', '100', '0', '0', '40201', '60', '1200', '33', '12', '10000', '1000', '3', '6:00', '40', '1800', '300', '100', '300', '180', '60', '801');
 INSERT INTO `match` VALUES ('40202', '2', '1', '50元话费赛（免费）', '0', '1000', '100', '100', '0', '0', '40202', '60', '1200', '33', '12', '10000', '1000', '3', '13:00', '2', '25200', '300', '100', '300', '180', '60', '801');
-INSERT INTO `match` VALUES ('40301', '2', '1', '5元话费赛', '0', '1000', '100', '100', '10000', '10000', '40301', '90', '1200', '33', '12', '10000', '1000', '0', '0', '0', '3', '300', '100', '0', '0', '0', '803');
+INSERT INTO `match` VALUES ('40301', '2', '1', '5元话费赛', '0', '1000', '100', '100', '0', '10000', '40301', '90', '1200', '33', '12', '10000', '1000', '0', '0', '0', '3', '300', '100', '0', '0', '0', '803');
 
 -- ----------------------------
 -- Table structure for match_award
@@ -2512,30 +2530,32 @@ CREATE TABLE `room` (
   `exp` int(10) unsigned DEFAULT '0' COMMENT '牌局经验',
   `gold_award_out` int(10) unsigned DEFAULT '0' COMMENT '淘汰玩家奖励金币数',
   `robot_seed_num` int(10) DEFAULT '0' COMMENT '期望的机器人数量',
+  `virtual_player_num` int(11) DEFAULT '0' COMMENT '附加虚拟的玩家人数',
+  `prevent_cheat` tinyint(4) DEFAULT '0' COMMENT '是否防作弊',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='斗地主房间奖励表';
 
 -- ----------------------------
 -- Records of room
 -- ----------------------------
-INSERT INTO `room` VALUES ('10101', '0', '1000入场', '200', '1000', '400', '10101', '100', '100', '90');
-INSERT INTO `room` VALUES ('10102', '0', '10000入场', '600', '10000', '1200', '10102', '200', '100', '10');
-INSERT INTO `room` VALUES ('10103', '0', '100000入场', '6000', '100000', '12000', '10103', '300', '100', '0');
-INSERT INTO `room` VALUES ('10201', '2', '10000入场', '600', '10000', '1200', '10201', '100', '100', '0');
-INSERT INTO `room` VALUES ('10202', '2', '100000入场', '6000', '100000', '12000', '10202', '200', '100', '0');
-INSERT INTO `room` VALUES ('10203', '2', '1000000入场', '20000', '1000000', '40000', '10203', '300', '100', '0');
-INSERT INTO `room` VALUES ('20101', '3', '1000入场', '100', '1000', '400', '20101', '100', '100', '90');
-INSERT INTO `room` VALUES ('20102', '3', '10000入场', '300', '10000', '1200', '20102', '200', '100', '10');
-INSERT INTO `room` VALUES ('20103', '3', '100000入场', '3000', '100000', '12000', '20103', '300', '100', '0');
-INSERT INTO `room` VALUES ('20201', '5', '10000入场', '300', '10000', '1200', '20201', '100', '100', '0');
-INSERT INTO `room` VALUES ('20202', '5', '100000入场', '3000', '100000', '12000', '20202', '200', '100', '0');
-INSERT INTO `room` VALUES ('20203', '5', '1000000入场', '10000', '1000000', '40000', '20203', '300', '100', '0');
-INSERT INTO `room` VALUES ('30101', '6', '1000入场', '100', '1000', '400', '30101', '100', '100', '0');
-INSERT INTO `room` VALUES ('30102', '6', '10000入场', '300', '10000', '1200', '30102', '200', '100', '0');
-INSERT INTO `room` VALUES ('30103', '6', '100000入场', '3000', '100000', '12000', '30103', '300', '100', '0');
-INSERT INTO `room` VALUES ('30201', '8', '10000入场', '300', '10000', '1200', '30201', '100', '100', '0');
-INSERT INTO `room` VALUES ('30202', '8', '100000入场', '3000', '100000', '12000', '30202', '200', '100', '0');
-INSERT INTO `room` VALUES ('30203', '8', '1000000入场', '10000', '1000000', '40000', '30203', '300', '100', '0');
+INSERT INTO `room` VALUES ('10101', '0', '1000入场', '200', '1000', '400', '10101', '100', '100', '10', '400', '0');
+INSERT INTO `room` VALUES ('10102', '0', '10000入场', '600', '10000', '1200', '10102', '200', '100', '0', '0', '1');
+INSERT INTO `room` VALUES ('10103', '0', '100000入场', '6000', '100000', '12000', '10103', '300', '100', '0', '0', '1');
+INSERT INTO `room` VALUES ('10201', '2', '10000入场', '600', '10000', '1200', '10201', '100', '100', '0', '0', '0');
+INSERT INTO `room` VALUES ('10202', '2', '100000入场', '6000', '100000', '12000', '10202', '200', '100', '0', '0', '0');
+INSERT INTO `room` VALUES ('10203', '2', '1000000入场', '20000', '1000000', '40000', '10203', '300', '100', '0', '0', '0');
+INSERT INTO `room` VALUES ('20101', '3', '1000入场', '100', '1000', '400', '20101', '100', '100', '10', '300', '0');
+INSERT INTO `room` VALUES ('20102', '3', '10000入场', '300', '10000', '1200', '20102', '200', '100', '0', '0', '1');
+INSERT INTO `room` VALUES ('20103', '3', '100000入场', '3000', '100000', '12000', '20103', '300', '100', '0', '0', '1');
+INSERT INTO `room` VALUES ('20201', '5', '10000入场', '300', '10000', '1200', '20201', '100', '100', '0', '0', '0');
+INSERT INTO `room` VALUES ('20202', '5', '100000入场', '3000', '100000', '12000', '20202', '200', '100', '0', '0', '0');
+INSERT INTO `room` VALUES ('20203', '5', '1000000入场', '10000', '1000000', '40000', '20203', '300', '100', '0', '0', '0');
+INSERT INTO `room` VALUES ('30101', '6', '1000入场', '100', '1000', '400', '30101', '100', '100', '0', '0', '0');
+INSERT INTO `room` VALUES ('30102', '6', '10000入场', '300', '10000', '1200', '30102', '200', '100', '0', '0', '1');
+INSERT INTO `room` VALUES ('30103', '6', '100000入场', '3000', '100000', '12000', '30103', '300', '100', '0', '0', '1');
+INSERT INTO `room` VALUES ('30201', '8', '10000入场', '300', '10000', '1200', '30201', '100', '100', '0', '0', '0');
+INSERT INTO `room` VALUES ('30202', '8', '100000入场', '3000', '100000', '12000', '30202', '200', '100', '0', '0', '0');
+INSERT INTO `room` VALUES ('30203', '8', '1000000入场', '10000', '1000000', '40000', '30203', '300', '100', '0', '0', '0');
 
 -- ----------------------------
 -- Table structure for room_award
@@ -2570,24 +2590,24 @@ CREATE TABLE `room_award` (
 -- ----------------------------
 -- Records of room_award
 -- ----------------------------
-INSERT INTO `room_award` VALUES ('10101', '10', '2', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '10', '20', '30', '40', '50', '60', '70', '80', '100');
-INSERT INTO `room_award` VALUES ('10102', '10', '2', '10', '1', '1', '1', '1', '1', '1', '1', '1', '1', '50', '100', '150', '200', '250', '300', '350', '400', '500');
-INSERT INTO `room_award` VALUES ('10103', '10', '2', '100', '1', '1', '1', '1', '1', '1', '1', '1', '1', '500', '1000', '1500', '2000', '2500', '3000', '3500', '4000', '5000');
-INSERT INTO `room_award` VALUES ('10201', '10', '2', '10', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
-INSERT INTO `room_award` VALUES ('10202', '10', '2', '100', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
-INSERT INTO `room_award` VALUES ('10203', '10', '2', '200', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
-INSERT INTO `room_award` VALUES ('20101', '10', '2', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '10', '20', '30', '40', '50', '60', '70', '80', '100');
-INSERT INTO `room_award` VALUES ('20102', '10', '2', '10', '1', '1', '1', '1', '1', '1', '1', '1', '1', '50', '100', '150', '200', '250', '300', '350', '400', '500');
-INSERT INTO `room_award` VALUES ('20103', '10', '2', '100', '1', '1', '1', '1', '1', '1', '1', '1', '1', '500', '1000', '1500', '2000', '2500', '3000', '3500', '4000', '5000');
-INSERT INTO `room_award` VALUES ('20201', '10', '2', '10', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
-INSERT INTO `room_award` VALUES ('20202', '10', '2', '100', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
-INSERT INTO `room_award` VALUES ('20203', '10', '2', '200', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
-INSERT INTO `room_award` VALUES ('30101', '10', '2', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '10', '20', '30', '40', '50', '60', '70', '80', '100');
-INSERT INTO `room_award` VALUES ('30102', '10', '2', '10', '1', '1', '1', '1', '1', '1', '1', '1', '1', '50', '100', '150', '200', '250', '300', '350', '400', '500');
-INSERT INTO `room_award` VALUES ('30103', '10', '2', '100', '1', '1', '1', '1', '1', '1', '1', '1', '1', '500', '1000', '1500', '2000', '2500', '3000', '3500', '4000', '5000');
-INSERT INTO `room_award` VALUES ('30201', '10', '2', '10', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
-INSERT INTO `room_award` VALUES ('30202', '10', '2', '100', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
-INSERT INTO `room_award` VALUES ('30203', '10', '2', '200', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `room_award` VALUES ('10101', '5', '1', '100', '1', '1', '1', '1', '1', '1', '1', '1', '1', '10', '20', '30', '40', '50', '60', '70', '80', '100');
+INSERT INTO `room_award` VALUES ('10102', '5', '2', '10', '1', '1', '1', '1', '1', '1', '1', '1', '1', '50', '100', '150', '200', '250', '300', '350', '400', '500');
+INSERT INTO `room_award` VALUES ('10103', '5', '2', '100', '1', '1', '1', '1', '1', '1', '1', '1', '1', '500', '1000', '1500', '2000', '2500', '3000', '3500', '4000', '5000');
+INSERT INTO `room_award` VALUES ('10201', '5', '2', '10', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `room_award` VALUES ('10202', '5', '2', '100', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `room_award` VALUES ('10203', '5', '2', '300', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `room_award` VALUES ('20101', '5', '1', '100', '1', '1', '1', '1', '1', '1', '1', '1', '1', '10', '20', '30', '40', '50', '60', '70', '80', '100');
+INSERT INTO `room_award` VALUES ('20102', '5', '2', '10', '1', '1', '1', '1', '1', '1', '1', '1', '1', '50', '100', '150', '200', '250', '300', '350', '400', '500');
+INSERT INTO `room_award` VALUES ('20103', '5', '2', '100', '1', '1', '1', '1', '1', '1', '1', '1', '1', '500', '1000', '1500', '2000', '2500', '3000', '3500', '4000', '5000');
+INSERT INTO `room_award` VALUES ('20201', '5', '2', '10', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `room_award` VALUES ('20202', '5', '2', '100', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `room_award` VALUES ('20203', '5', '2', '300', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `room_award` VALUES ('30101', '5', '1', '100', '1', '1', '1', '1', '1', '1', '1', '1', '1', '10', '20', '30', '40', '50', '60', '70', '80', '100');
+INSERT INTO `room_award` VALUES ('30102', '5', '2', '10', '1', '1', '1', '1', '1', '1', '1', '1', '1', '50', '100', '150', '200', '250', '300', '350', '400', '500');
+INSERT INTO `room_award` VALUES ('30103', '5', '2', '100', '1', '1', '1', '1', '1', '1', '1', '1', '1', '500', '1000', '1500', '2000', '2500', '3000', '3500', '4000', '5000');
+INSERT INTO `room_award` VALUES ('30201', '5', '2', '10', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `room_award` VALUES ('30202', '5', '2', '100', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `room_award` VALUES ('30203', '5', '2', '300', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
 
 -- ----------------------------
 -- Table structure for sign_award
@@ -2638,13 +2658,14 @@ CREATE TABLE `vip` (
   `exp_rate` float NOT NULL DEFAULT '0' COMMENT '经验倍率',
   `buy_gold_rate` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '购买金币加成',
   `free_card_prop` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '免费记牌器天数',
-  `price` int(11) DEFAULT '0' COMMENT '购买价格',
+  `price` int(11) NOT NULL DEFAULT '0' COMMENT '购买价格',
+  `match_chip_rate` float DEFAULT '0' COMMENT '比赛积分倍率',
   PRIMARY KEY (`level`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='VIP升级经验配置表';
 
 -- ----------------------------
 -- Records of vip
 -- ----------------------------
-INSERT INTO `vip` VALUES ('1', 'VIP周卡', '7', '401', '10000', '1', '3000', '1.5', '0', '7', '10');
-INSERT INTO `vip` VALUES ('2', 'VIP月卡', '30', '402', '50000', '2', '3000', '1.5', '0', '30', '30');
-INSERT INTO `vip` VALUES ('3', 'VIP年卡', '360', '403', '1000000', '3', '5000', '2', '5', '360', '300');
+INSERT INTO `vip` VALUES ('1', 'VIP周卡', '7', '401', '10000', '1', '3000', '1', '0', '7', '10', '2');
+INSERT INTO `vip` VALUES ('2', 'VIP月卡', '30', '402', '50000', '2', '3000', '1', '0', '30', '30', '2');
+INSERT INTO `vip` VALUES ('3', 'VIP年卡', '360', '403', '1000000', '3', '5000', '1', '5', '360', '300', '3');
