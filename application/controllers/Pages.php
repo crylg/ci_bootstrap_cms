@@ -2,7 +2,7 @@
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
  * Created by PhpStorm.
- * User: Administrator
+ * User: leiguan
  * Date: 2016/1/8
  * Time: 18:19
  */

@@ -11,17 +11,32 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 function diffUnix($startdate,$enddate)
 {
     $cle =  abs($startdate - $enddate); //得出时间戳差值
-    $d = ceil($cle/3600/24);
-    $h = ceil(($cle%(3600*24))/3600);  //%取余
-    $m = ceil(($cle%(3600*24))/60%60);
-    $s = ceil(($cle%(3600*24))%60);
-    return $d.'天'.$h.'小时'.$m.'分'.$s.'秒';
-//    $date=floor((strtotime($enddate)-strtotime($startdate))/86400);
-//    $hour=floor((strtotime($enddate)-strtotime($startdate))%86400/3600);
-//    $minute=floor((strtotime($enddate)-strtotime($startdate))%86400/60);
-//    var_dump((strtotime($enddate)-strtotime($startdate))%86400);
-//    $second=floor((strtotime($enddate)-strtotime($startdate))%86400%60);
-//    return $date."天". $hour."小时".$minute."分钟".$second."秒";
+    $d = floor($cle/3600/24);
+    $h = floor(($cle%(3600*24))/3600);  //%取余
+    $m = floor(($cle%(3600*24))/60%60);
+    $s = floor(($cle%(3600*24))%60);
+    $str='';
+    if($m>0) {
+        $str= $m . '分'.$str;
+        if($h>0) {
+            $str= $h . '小时'.$str;
+            if($d>0) {
+                $str= $d . '天'.$str;
+            }
+        }
+    }
+    if($m==0 && $s==0&& $h==0)
+    {
+        switch($d)
+        {
+            case 1: return "昨天";break;
+            case 2: return "前天";break;
+            case 3: return "3天前";break;
+            default: break;
+        }
+    };
+    if($d>100) return '所有';
+    return $str.$s.'秒';
 }
 /**
  * @param $hour 距现在多少小时前
@@ -30,4 +45,37 @@ function diffUnix($startdate,$enddate)
 function getNearTimestampString($hour)
 {
     return unix_to_human(time()-$hour*60*60,TRUE,NULL);
+}
+
+/**
+ * @return int 获得今天凌晨时间戳
+ */
+ function getTodayStartPointUnix()
+{
+    return strtotime(date('Y-m-d'));
+}
+
+/**
+ * 获取距今几天前(后)凌晨的时间戳
+ */
+function getDayStartPointUnix($day)
+{
+   return strtotime(date('Y-m-d',strtotime($day.' day')));
+}
+/**
+ * @return int 获得今天凌晨到现在已过时间戳
+ */
+ function getTodayPassedUnix()
+{
+    return time()-strtotime(date('Y-m-d'));
+}
+/**
+ * 加密密码
+ * @param $password
+ * @return string
+ */
+function getEncryptionPassword($password)
+{
+    $pw=md5(PASSWORD_FLAG.$password);
+    return $pw;
 }

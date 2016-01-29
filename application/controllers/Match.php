@@ -4,7 +4,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 /**
  * 竞技场
  * Created by PhpStorm.
- * User: Administrator
+ * User: leiguan
  * Date: 2016/1/13
  * Time: 12:04
  */

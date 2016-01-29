@@ -26,29 +26,9 @@
 <nav class="navbar navbar-dark bg-primary">
     <ul class="nav navbar-nav">
         <li class="nav-item active">
-            <a class="nav-link" href="<?=site_url('overriew');?>">概览</a>
+            <a class="nav-link" href="javascript:void(0)"><?=$title;?></a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="<?=site_url('pay');?>">充值信息</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="<?=site_url('room');?>">自由场信息</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="<?=site_url('match');?>">竞技场信息</a>
-        </li>
-    </ul>
-    <script>
-        function searchID()
-        {
-            var id=$("#input_id").val();
-            window.location.href="<?=site_url('player/index/');?>"+"/"+id;
-        }
-    </script>
-    <div class="form-inline pull-xs-right">
-        <input style="margin-top: 8px;" class="form-control" id="input_id" type="text" placeholder="用户ID"  onkeyup="value=value.replace(/[^\d]/g,'') "onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
-        <a href="javascript:searchID()"><button style="margin-top: 8px;" class="btn  btn-info" type="submit">查看</button></a>
-    </div>
+     </ul>
 </nav>
 <div class="container">
     <script>

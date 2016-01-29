@@ -76,7 +76,7 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => '127.0.0.1',
-	'username' => 'ddzgame',
+	'username' => 'root',
 	'password' => '',
 	'database' => 'ddz_data',
 	'dbdriver' => 'mysqli',
@@ -94,8 +94,14 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+
 $db['ddz_game'] =$db['default'];
 $db['ddz_game']["database"]="ddz_game";
 
 $db['ddz_gdf'] =$db['default'];
 $db['ddz_gdf']["database"]="ddz_gdf";
+
+$db['web'] =$db['default'];
+$db['web']["database"]="web";
+
+
