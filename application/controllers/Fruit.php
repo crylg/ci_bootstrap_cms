@@ -26,17 +26,18 @@ class Fruit extends CI_Controller
     }
     public function index()
     {
-        $data["title"]="运营商-".$this->_userdata[SESSION_USERNAME]."信息展示页";
+        $data["title"]="运营商-".$this->_userdata[SESSION_CHANNEL]."信息展示页";
         $outlineDays=array();
-        array_push($outlineDays,$this->getOutline($this->_userdata[SESSION_USERNAME],0,time()));//今天
-        array_push($outlineDays,$this->getOutline($this->_userdata[SESSION_USERNAME],getTodayStartPointUnix(),time()));//今天
-        array_push($outlineDays,$this->getOutline($this->_userdata[SESSION_USERNAME],getDayStartPointUnix(-1),getTodayStartPointUnix()));//昨天
-        array_push($outlineDays,$this->getOutline($this->_userdata[SESSION_USERNAME],getDayStartPointUnix(-2),getDayStartPointUnix(-1)));//前天
-        array_push($outlineDays,$this->getOutline($this->_userdata[SESSION_USERNAME],getDayStartPointUnix(-3),getDayStartPointUnix(-2)));//三天前
+        array_push($outlineDays,$this->getOutline($this->_userdata[SESSION_CHANNEL],0,time()));//今天
+        array_push($outlineDays,$this->getOutline($this->_userdata[SESSION_CHANNEL],getTodayStartPointUnix(),time()));//今天
+        array_push($outlineDays,$this->getOutline($this->_userdata[SESSION_CHANNEL],getDayStartPointUnix(-1),getTodayStartPointUnix()));//昨天
+        array_push($outlineDays,$this->getOutline($this->_userdata[SESSION_CHANNEL],getDayStartPointUnix(-2),getDayStartPointUnix(-1)));//前天
+        array_push($outlineDays,$this->getOutline($this->_userdata[SESSION_CHANNEL],getDayStartPointUnix(-3),getDayStartPointUnix(-2)));//三天前
         $data["outlineDays"]=$outlineDays;
         $this->load->view('pages/partner/header', $data);
         $this->load->view('pages/partner/info', $data);
         $this->load->view('templates/footer', $data);
+        var_dump($data);
     }
     private function getOutline($channel='internal_dev',$startTime=0,$endTime=99999999999)
     {

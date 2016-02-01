@@ -88,6 +88,7 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 //session常量
 define('SESSION_LOGINED_IN',"logged_in");
 define('SESSION_USERNAME',"username");
+define('SESSION_CHANNEL',"channel");
 
 //PW
 define('PASSWORD_FLAG','leiguan');

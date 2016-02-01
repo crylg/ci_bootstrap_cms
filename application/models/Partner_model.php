@@ -124,7 +124,18 @@ class Partner_model extends CI_Model
     function login()
     {
         $username=$this->input->post('username');
-        $data = array(SESSION_USERNAME=>$username,SESSION_LOGINED_IN=>TRUE);
+        $channel=$this->getChannel($username);
+        $data = array(SESSION_USERNAME=>$username,SESSION_LOGINED_IN=>TRUE,SESSION_CHANNEL=>$channel);
+
         $this->session->set_userdata($data);                    //添加session数据
+    }
+    private function getChannel($username)
+    {
+        $sql="SELECT user_channel FROM `account` WHERE `account_name` = '$username'";
+        $query=$this->db->query($sql);
+        if(!$query) return false;
+        $result=$query->row();
+        $channel=$result->user_channel;
+        return $channel;
     }
 }
